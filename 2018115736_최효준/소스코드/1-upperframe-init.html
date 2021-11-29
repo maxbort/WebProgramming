@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<HTML><HEAD>
+<meta charset="utf-8">
+<style>
+  body{
+    background-image: url('media/이미지/토토로윗배경수정.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  };
+  <base target='parent'>
+</style>
+
+<SCRIPT language="JavaScript">
+
+   today = new Date()
+   week = new Array("일","월","화","수","목","금","토")
+   day = week[today.getDay()]
+   document.write(today.toLocaleString().fontcolor("white")  + day.fontcolor("white") + "요일".fontcolor("white"));
+
+function Check() {
+
+  if (Logininput.id.value.length < 1) {
+	alert("아이디를 입력하세요.");
+	Logininput.id.focus();
+    return false; 	}
+
+  if (Logininput.pass.value.length < 1) {
+	alert("비밀번호를 입력하세요.");
+	Logininput.pass.focus();
+	return false;
+  }
+
+  if ((Logininput.id.value=="cchj") && (Logininput.pass.value == "2449")) {
+      confirm("로그인 되셨습니다.");
+      window.top.location.href='0-main-index-login-pass.html';
+	}
+	else
+	  {
+      alert("아이디 혹은 비밀번호가 틀립니다."); }
+}
+
+</SCRIPT>
+
+
+</HEAD>
+
+<TITLE>My Homepage</TITLE>
+</HEAD>
+
+<BODY>
+
+<br><br>
+<audio autoplay controls><source src="media\Always With Me.mp3" type="audio/mp3"></audio>
+  <Form Name='Logininput' Method='get' OnSubmit='return Check()'>
+     <TABLE bgcolor='lightgrey' border='2' align='Right'>
+ 	   <TR>
+	       <TD> <font size=2>아 이 디</font>	</TD>
+	 	   <TD> <input type='text' name='id' size=10 maxlength=11> </TD>
+		   <TD bgcolor='white' align='center'>
+		      <input type='submit' value='로그인' style='background-color:#cccccc'> </td>
+    </TR>
+
+    <TR>
+		   <TD> <font size=2>비밀번호</font>	</TD>
+	 	   <TD> <input type='password' name='pass' size=10 maxlength=11> </TD>
+           <TD bgcolor='white' align='center'>
+              <input type='reset' value='취   소' style='background-color:#cccccc'> </TD>
+    </TR>
+     </TABLE>
+    </FORM>
+
+</BODY>
+</HTML>
