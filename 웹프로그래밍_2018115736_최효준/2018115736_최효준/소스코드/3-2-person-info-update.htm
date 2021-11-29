@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>회원 가입 페이지</title>
+   <meta charset="utf-8">
+   <style>
+     body {
+       background:url('media/background.jpg') center;
+     }
+   </style>
+</head>
+
+<body>
+  <center> <font color="Blue">
+    <h3> 나의 신상 및 역량을 수정합니다. </h3></font>
+
+	 	</center>
+	<hr height="4px" color="green">
+  <br>
+
+     <form action="mailto:test@hanmail.net" method="post">
+
+		<table border="0" cellpadding="3" cellspacing="1" bgcolor="#6CAEFC" align="center">
+		        <tr>
+			<td bgcolor="#B6CFF1" colspan="2" align="center">
+				<b>개인 신상 정보</b>
+			</td></tr>
+		        <tr>
+			<td bgcolor="#EAEAEA" align="center"><b>주민등록번호:</b></td>
+			<td bgcolor="#FFFFFF">
+
+			        <input type="text" name="jumin" size="20" value="123456-1234567">  예) 1234561234567
+			</td></tr>
+		         <tr>
+			<td bgcolor="#EAEAEA" align="center"><b>생일:</b></td>
+			<td bgcolor="#FFFFFF">
+
+			         <input type="text" name="byear" size="5" value="2000">년
+
+			         <select name="bmonth">
+
+				<option value="1">1</option>
+			         </select>월
+			</td></tr>
+		         <tr>
+			<td bgcolor="#EAEAEA" align="center"><b>관심분야:</b></td>
+			<td bgcolor="#FFFFFF">
+
+		   	         <input type="checkbox" name="favorite" value="컴퓨터" checked>컴퓨터
+			         <input type="checkbox" name="favorite" value="인터넷" checked>인터넷
+			</td></tr>
+		         <tr>
+			<td bgcolor="#EAEAEA" align="center"><b>자기소개:</b></td>
+			<td bgcolor="#FFFFFF">
+
+		       <textarea name="intro" cols="55" rows="5" placeholder="웹 프로그래밍 기초 교과목의 수강을 환영합니다."></textarea>
+			</td></tr>
+		</table><br>
+
+		<hr height="4px" color="green">
+		<center>
+		         <input type="submit" value="개인정보 수정">
+		         <input type="reset" value="취소">
+		</center>
+	 </form>
+
+</body>
+</html>
